@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Create Article</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<main>
+  <h1>Create article</h1>
+  <form method="POST" action="/create-article">
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title">
+    </div>
+    <div>
+      <label for="content">Content</label>
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="author">Authors ID</label>
+      <input type="text" name="author" id="author">
+    </div>
+    <div>
+      <label id="uploadimage"> Image URL
+      </label>
+      <input type="text" name="image" id="uploadimg">
+    </div>
+    <div> <a href="index.html">
+      <input name="back" type="button" id="back" value="Go back">
+      </a>
+      <input type="reset" name="reset" id="reset" value="Reset">
+      <input type="submit" id="create_article" value="Create Article">
+    </div>
+  </form>
+</main>
+<footer> </footer>
+</body>
+</html>
